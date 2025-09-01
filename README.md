@@ -6,7 +6,7 @@ The project is structured into multiple folders for clarity and organization.
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ### `model-weights/`
 Contains the pretrained weights for all versions of YOLO implemented in this project:
@@ -23,13 +23,13 @@ Includes the YAML configuration files for each model version.
 This repository also includes a simple program designed to classify objects based on their **size distribution** within the dataset. 
 
 
-## 🛠️ Running a YOLOv12 Version (Modified or Original)
+##  Running a YOLOv12 Version (Modified or Original)
 
 To run any YOLO version from this repository (e.g., YOLOv12-Modified), follow these steps:
 
 ---
 
-### 📦 Step 1: Install Required Dependencies
+###  Step 1: Install Required Dependencies
 
 Ensure you're using the correct versions of **Ultralytics** and **Weights & Biases**:
 
@@ -39,7 +39,7 @@ pip install ultralytics==8.3.78 wandb==0.19.7
 
 ---
 
-### 🚀 Step 2: Initialize Weights & Biases (Optional but Recommended)
+###  Step 2: Initialize Weights & Biases (Optional but Recommended)
 
 Use [Weights & Biases (wandb)](https://wandb.ai/) to track your experiments, compare runs, and visualize performance:
 
@@ -54,7 +54,7 @@ wandb.init(
 
 ---
 
-### 📂 Step 3: Load the YOLOv12 Model
+###  Step 3: Load the YOLOv12 Model
 
 You can load the model architecture from a custom `.yaml` file.
 
@@ -67,7 +67,7 @@ model = YOLO('/kaggle/working/yolov12.yaml').load('yolo12n.pt')
 
 ---
 
-### 🏋️ Step 4: Train the Model
+###  Step 4: Train the Model
 
 Train your selected YOLO version using your custom dataset:
 
@@ -84,7 +84,7 @@ model.train(
 
 ---
 
-### 📌 Notes
+###  Notes
 
 - Your `data.yaml` file should include:
   ```yaml
